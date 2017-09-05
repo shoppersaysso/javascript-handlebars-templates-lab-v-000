@@ -37,7 +37,7 @@ function displayEditForm() {
     ingredients.push(ingredientsList[i].value)
   }
   var name = document.getElementById("name").value
-  var description = document.getElementById("description").value
+  var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
   var recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
   return(recipe)
   }
