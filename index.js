@@ -58,7 +58,6 @@ function displayEditForm() {
 
   document.getElementById("main").innerHTML += template(recipe)
   }
-}
 
 function updateRecipe() {
   var recipe = recipeInfo()
