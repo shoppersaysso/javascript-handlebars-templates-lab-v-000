@@ -65,3 +65,5 @@ function updateRecipe() {
 
   document.getElementById("main").innerHTML += template(recipe)
 }
+
+}
