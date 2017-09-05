@@ -35,6 +35,8 @@ function createRecipe() {
 
 function displayEditForm() {
 
+    var submitAction = editRecipe
+
 }
 
 function updateRecipe() {
