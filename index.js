@@ -17,6 +17,7 @@ function recipeInfo() {
 function createRecipe() {
   var recipe = recipeInfo()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
+  var template = Handlebars.compile(recipeTemplate)
 
   var submitAction = createRecipe
 
