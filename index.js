@@ -16,11 +16,7 @@ function recipeInfo() {
 
 function createRecipe() {
   var recipe = recipeInfo()
-  var name = document.getElementById("name")
-  var description = document.getElementById("description")
-
-
-  var recipe = formTemplate({name: 'name', description: 'description', indgredients: 'ingredients'})
+  var recipeTemplate = document.getElementById("recipe-template")
 
   var submitAction = createRecipe
 
