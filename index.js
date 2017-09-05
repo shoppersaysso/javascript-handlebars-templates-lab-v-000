@@ -5,6 +5,11 @@ function initForm() {
   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
 }
 
+function recipeInfo() {
+
+  
+}
+
 function createRecipe() {
 
   var name = document.getElementById("name")
