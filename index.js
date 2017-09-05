@@ -48,7 +48,7 @@ function displayEditForm() {
   var ingredientsList = document.getElementsByName("ingredientsList")
   var ingredients = []
   for(var i = 0; i < ingredientsList.length; i++) {
-    ingredients.push(ingredientsList[i].value)
+    ingredients.push(ingredientsList[i].innerText)
   }
 
   var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
