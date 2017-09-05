@@ -8,9 +8,10 @@ function recipeInfo() {
   var ingredientsList = document.getElementsByName("ingredients")
   var ingredients = []
   for(var i=0;i<ingredientsList.length;i++) {
-    if(ingredientsList[i].value !== "")
+    if(ingredientsList[i].value !== "") {
     ingredients.push(ingredientsList[i].value)
     }
+  }
 
   var name = document.getElementById("name").value
   var description = document.getElementById("description").value
