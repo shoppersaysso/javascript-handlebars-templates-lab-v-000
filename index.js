@@ -49,7 +49,7 @@ function displayEditForm() {
 function updateRecipe() {
   var recipe = recipeInfo()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
-
+  var template = Handlebars.compile("recipeTemplate")
 }
 
 function handlebarsSetup() {
