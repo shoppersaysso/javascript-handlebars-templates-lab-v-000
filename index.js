@@ -4,21 +4,6 @@
 //   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
 // }
 
-function recipeInfo() {
-  var ingredientsList = document.getElementsByName("ingredients")
-  var ingredients = []
-  for(var i=0;i<ingredientsList.length;i++) {
-    if(ingredientsList[i].value !== "") {
-    ingredients.push(ingredientsList[i].value)
-    }
-  }
-
-  var name = document.getElementById("name").value
-  var description = document.getElementById("description").value
-  var recipe = {name, description, ingredients}
-  return(recipe)
-}
-
 function createRecipe() {
   var recipe = recipeInfo()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
@@ -50,6 +35,21 @@ function updateRecipe() {
   var template = Handlebars.compile(recipeTemplate)
 
   document.getElementById("main").innerHTML += template(recipe)
+}
+
+function recipeInfo() {
+  var ingredientsList = document.getElementsByName("ingredients")
+  var ingredients = []
+  for(var i=0;i<ingredientsList.length;i++) {
+    if(ingredientsList[i].value !== "") {
+    ingredients.push(ingredientsList[i].value)
+    }
+  }
+
+  var name = document.getElementById("name").value
+  var description = document.getElementById("description").value
+  var recipe = {name, description, ingredients}
+  return(recipe)
 }
 
 function handlebarsSetup() {
