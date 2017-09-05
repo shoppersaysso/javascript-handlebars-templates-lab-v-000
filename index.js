@@ -13,6 +13,11 @@ function recipeInfo() {
     ingredients.push(ingredientsList[i].value)
   }
 }
+var name = document.getElementById("name").value
+var description = document.getElementById("description").value
+var recipe = {name, ingredients, description}
+return(recipe)
+}
 
 function createRecipe() {
   var recipe = recipeInfo()
@@ -33,6 +38,7 @@ function displayEditForm() {
   }
 
 
+
 }
 
 function updateRecipe() {
@@ -46,12 +52,6 @@ function handlebarsSetup() {
   })
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
-}
-
-  var name = document.getElementById("name").value
-  var description = document.getElementById("description").value
-  var recipe = {name, ingredients, description}
-  return(recipe)
 }
 
 function init() {
