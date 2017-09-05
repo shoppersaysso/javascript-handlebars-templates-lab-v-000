@@ -20,6 +20,7 @@ function createRecipe() {
   var ingredients =
 
   var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+  var recipe =
 
 }
 
