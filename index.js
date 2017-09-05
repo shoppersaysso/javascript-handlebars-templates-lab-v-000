@@ -14,7 +14,7 @@ function recipeInfo() {
 
   var name = document.getElementById("name").value
   var description = document.getElementById("description").value
-  var recipe = {name, ingredients, description}
+  var recipe = {name, description, ingredients}
   return(recipe)
   }
 
