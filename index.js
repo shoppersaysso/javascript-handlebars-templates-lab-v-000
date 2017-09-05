@@ -48,7 +48,7 @@ function displayEditForm() {
 
 function updateRecipe() {
   var recipe = recipeInfo()
-  var recipeTemplate = document.getElementById("recipe- ")
+  var recipeTemplate = document.getElementById("recipe-template")
 }
 
 function handlebarsSetup() {
