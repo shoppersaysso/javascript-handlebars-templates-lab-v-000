@@ -8,7 +8,10 @@ function initForm() {
 function recipeInfo() {
   var ingredientList = document.getElementByName("ingredients")
   var ingredients = []
-  for(var i=0; i < ingredientsList.length;)
+  for(var i = 0; i < ingredientsList.length; i++) {
+    if(ingredientsList)
+  }
+
 
 }
 
