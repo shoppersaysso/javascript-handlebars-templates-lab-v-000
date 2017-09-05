@@ -38,7 +38,7 @@ function displayEditForm() {
   }
   var name = document.getElementById("name").value
   var description = document.getElementById("description").value
-  var recipe = {name, ingredients, description, submitAction: 'createRecipe()'}
+  var recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
   return(recipe)
   }
 }
