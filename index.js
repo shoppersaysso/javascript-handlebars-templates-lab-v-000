@@ -18,13 +18,13 @@
 //   return(recipe)
 //   }
 //
-// function createRecipe() {
-//   var recipe = recipeInfo()
-//   var recipeTemplate = document.getElementById("recipe-template").innerHTML
-//   var template = Handlebars.compile(recipeTemplate)
-//
-//   document.getElementById("main").innerHTML += template(recipe)
-// }
+function createRecipe() {
+  var recipe = recipeInfo()
+  var recipeTemplate = document.getElementById("recipe-template").innerHTML
+  var template = Handlebars.compile(recipeTemplate)
+
+  document.getElementById("main").innerHTML += template(recipe)
+}
 //
 //
 // function displayEditForm() {
