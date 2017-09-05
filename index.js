@@ -1,8 +1,8 @@
-function initForm() {
-
-  var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-  document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
-}
+// function initForm() {
+//
+//   var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+//   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
+// }
 
 // function recipeInfo() {
 //   var ingredientsList = document.getElementByName("ingredients")
