@@ -18,7 +18,7 @@
     <script id="recipe-form-partial" type="text/x-handlebars-template">
       Name: <input id="name" type="text" value="{{name}}"><br>
       Description: <input id="description" type="text" value="{{description}}"><br>
-      Ingredients<br>
+      Ingredients <br>
       {{#each ingredients}}
       <input name="ingredients" type="text" value="{{this}}"><br>
       {{else}}
@@ -29,8 +29,6 @@
       <input name="ingredients" type="text"><br>
       {{/each}}
       <input type="submit">
-
-
     </script>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
