@@ -12,8 +12,6 @@ function recipeInfo() {
     if(ingredientsList[i].value !== "")
     ingredients.push(ingredientsList[i].value)
   }
-
-
 }
 
 function createRecipe() {
