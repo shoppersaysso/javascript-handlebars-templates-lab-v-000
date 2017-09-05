@@ -38,7 +38,6 @@ function updateRecipe() {
   document.getElementById("main").innerHTML += template(recipe)
 }
 
-
 function recipeInfo() {
   var ingredientsList = document.getElementByName("ingredients")
   var ingredients = []
