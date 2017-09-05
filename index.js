@@ -19,7 +19,10 @@ function createRecipe() {
 
   var description = document.getElementById("description")
   var ingredients = [
-    document.getElementById("ingredients")]
+      {quantity: "1 cup", name: 'chicken'},
+      {quantity: "3 nanoliters", name: 'stock'},
+      {quantity: "12", name: 'noodles'}
+    ]
 
   var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   var newRecipe = createRecipeTemplate({description: 'description', indgredients: 'ingredients'})
