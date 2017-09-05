@@ -6,7 +6,7 @@ function initForm() {
 }
 
 function recipeInfo() {
-  var ingredientList = document.getElementById("ingredients")
+  var ingredientList = document.getElementByName("ingredients")
 
 }
 
