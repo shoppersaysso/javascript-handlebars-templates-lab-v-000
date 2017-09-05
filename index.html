@@ -10,7 +10,7 @@
     <main id="main">
     <!-- recipe form -->
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form id="recipe-form" onsubmit="createRecipe();return false;">
+      <form id="recipe-form" onsubmit="{{submitAction}};return false;">
         Description: <input type="text" id="description"><br>
         Details: <input type="text" id="ingredients"><br>
         <input type="submit">
