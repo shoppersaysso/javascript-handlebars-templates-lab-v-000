@@ -7,7 +7,7 @@
 function recipeInfo() {
   var ingredientsList = document.getElementsByName("ingredients")
   var ingredients = []
-  for(var i = 0; i < ingredientsList.length; i++) {
+  for(var i=0; i<ingredientsList.length; i++) {
     if(ingredientsList[i].value !== "")
     ingredients.push(ingredientsList[i].value)
     }
