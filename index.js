@@ -1,3 +1,11 @@
+function init() {
+  //put any page initialization/handlebars initialization here
+  handlebarsSetup()
+  initForm()
+}
+document.addEventListener("DOMContentLoaded", function(event) {
+  init()
+})
 
 function initForm() {
   var formTemplate = document.getElementById("recipe-form-template").innerHTML
@@ -50,7 +58,7 @@ function updateRecipe() {
   var recipe = recipeInfo()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
   var template = Handlebars.compile(recipeTemplate)
-  
+
   document.getElementById("main").innerHTML += template(recipe)
 }
 
@@ -61,12 +69,3 @@ function handlebarsSetup() {
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 }
-
-function init() {
-  //put any page initialization/handlebars initialization here
-  handlebarsSetup()
-  initForm()
-}
-document.addEventListener("DOMContentLoaded", function(event) {
-  init()
-})
