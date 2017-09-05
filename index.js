@@ -44,14 +44,14 @@ function createRecipe() {
 //   document.getElementById("main").innerHTML = template(recipe)
 //   }
 //
-// function updateRecipe() {
-//   var recipe = recipeInfo()
-//   var recipeTemplate = document.getElementById("recipe-template").innerHTML
-//   var template = Handlebars.compile(recipeTemplate)
-//
-//   document.getElementById("main").innerHTML += template(recipe)
-// }
-//
+function updateRecipe() {
+  var recipe = recipeInfo()
+  var recipeTemplate = document.getElementById("recipe-template").innerHTML
+  var template = Handlebars.compile(recipeTemplate)
+
+  document.getElementById("main").innerHTML += template(recipe)
+}
+
 function handlebarsSetup() {
   Handlebars.registerHelper('displayIngredient', function(ingredient) {
     return new Handlebars.SafeString('<li name="ingredients">' + ingredient + '</li>')
