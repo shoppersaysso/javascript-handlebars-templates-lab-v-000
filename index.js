@@ -35,11 +35,11 @@ function displayEditForm() {
 }
 
 function recipeInfo() {
-  var ingredientsNodes = document.getElementsByName("ingredients")
+  var ingredientList = document.getElementsByName("ingredients")
   var ingredients = []
-  for(var i=0;i<ingredientsNodes.length;i++) {
+  for(var i=0;i<ingredientList.length;i++) {
     if(ingredientsNodes[i].value !== "") {
-      ingredients.push(ingredientsNodes[i].value)
+      ingredients.push(ingredientsList[i].value)
     }
   }
   var name = document.getElementById("name").value
