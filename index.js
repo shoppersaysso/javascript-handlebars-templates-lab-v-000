@@ -5,7 +5,7 @@ function initForm() {
 }
 
 function createRecipe() {
-  var recipe = getRecipeVals()
+  var recipe = recipeInfo()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
   var template = Handlebars.compile(recipeTemplate)
   document.getElementById("main").innerHTML = template(recipe)
