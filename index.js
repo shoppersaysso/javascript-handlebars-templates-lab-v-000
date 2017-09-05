@@ -34,3 +34,7 @@ function updateRecipe() {
 
   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'editRecipe()'})
 }
+
+function init() {
+  
+}
