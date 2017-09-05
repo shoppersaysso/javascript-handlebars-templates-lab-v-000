@@ -43,10 +43,10 @@ function handlebarsSetup() {
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 }
 
-var name = document.getElementById("name").value
-var description = document.getElementById("description").value
-var recipe = {name, ingredients, description}
-return(recipe)
+  var name = document.getElementById("name").value
+  var description = document.getElementById("description").value
+  var recipe = {name, ingredients, description}
+  return(recipe)
 }
 
 function init() {
