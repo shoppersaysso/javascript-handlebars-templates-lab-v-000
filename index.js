@@ -28,5 +28,5 @@ function displayEditForm() {
 
 function updateRecipe() {
 
-  document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
+  document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'editRecipe()'})
 }
