@@ -19,8 +19,6 @@ function createRecipe() {
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
   var template = Handlebars.compile(recipeTemplate)
 
-  var submitAction = createRecipe
-
 
   document.getElementById("recipe-template").innerHTML += newRecipe;
 }
