@@ -6,15 +6,15 @@ function initForm() {
 }
 
 function recipeInfo() {
+  var ingredientList = document.getElementById("ingredients")
 
-  
 }
 
 function createRecipe() {
 
   var name = document.getElementById("name")
   var description = document.getElementById("description")
-  var ingredients = document.getElementById("ingredients")
+
 
   var recipe = formTemplate({name: 'name', description: 'description', indgredients: 'ingredients'})
 
