@@ -36,9 +36,11 @@ function displayEditForm() {
   for(var i = 0; i < ingredientsList.length; i++) {
     ingredients.push(ingredientsList[i].value)
   }
-
-
-
+  var name = document.getElementById("name").value
+  var description = document.getElementById("description").value
+  var recipe = {name, ingredients, description}
+  return(recipe)
+  }
 }
 
 function updateRecipe() {
