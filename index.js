@@ -17,7 +17,7 @@
 
 function createRecipe() {
 
-  var description = document.getElementById("description")
+  var description = 'yummy chicken noodle soup'
   var ingredients = [
       {quantity: "1 cup", name: 'chicken'},
       {quantity: "3 nanoliters", name: 'stock'},
