@@ -21,9 +21,9 @@ function updateRecipe() {
 function displayEditForm() {
   var name = document.getElementById("nameHeader").innerText
   var description = document.getElementById("recipeDescription").innerText
-  var ingredientsNodes = document.getElementsByName("ingredientsList")
+  var ingredientList = document.getElementsByName("ingredientsList")
   var ingredients = []
-  for(var i=0;i<ingredientsNodes.length;i++) {
+  for(var i=0;i<ingredientList.length;i++) {
     ingredients.push(ingredientsNodes[i].innerText)
   }
 
