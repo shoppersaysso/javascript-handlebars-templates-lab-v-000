@@ -14,6 +14,7 @@ function createRecipe() {
   document.getElementById("recipe-template").innerHTML += newRecipe;
 }
 
+
 function displayEditForm() {
 
 
