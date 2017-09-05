@@ -4,6 +4,7 @@ function createRecipe() {
   var name = document.getElementById("name")
   var description = document.getElementById("description")
   var ingredients = document.getElementById("ingredients")
+  
   var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   var newRecipe = createRecipeTemplate({description: 'description', indgredients: 'ingredients'})
 
