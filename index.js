@@ -26,7 +26,7 @@ function createRecipe() {
 
 function displayEditForm() {
   var name = document.getElementById("nameHeader").innerText
-  var description = document.getElementById("escription")
+  var description = document.getElementById("description")
 
 
 }
