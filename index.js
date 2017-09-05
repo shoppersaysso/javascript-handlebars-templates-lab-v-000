@@ -1,11 +1,11 @@
-function init() {
-  //put any page initialization/handlebars initialization here
-  handlebarsSetup()
-  initForm()
-}
-document.addEventListener("DOMContentLoaded", function(event) {
-  init()
-})
+// function init() {
+//   //put any page initialization/handlebars initialization here
+//   handlebarsSetup()
+//   initForm()
+// }
+// document.addEventListener("DOMContentLoaded", function(event) {
+//   init()
+// })
 
 function initForm() {
   var formTemplate = document.getElementById("recipe-form-template").innerHTML
