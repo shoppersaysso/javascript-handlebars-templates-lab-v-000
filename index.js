@@ -19,7 +19,7 @@ function createRecipe() {
   var description =
   var ingredients =
 
-  var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template"))
+  var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
 
 }
 
