@@ -38,7 +38,7 @@ function displayEditForm() {
   }
 
   var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
-  var template = Handlebars.compile("recipeFormTemplate")
+  var template = Handlebars.compile(recipeFormTemplate)
 
   var recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
 
@@ -49,7 +49,7 @@ function displayEditForm() {
 function updateRecipe() {
   var recipe = recipeInfo()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
-  var template = Handlebars.compile("recipeTemplate")
+  var template = Handlebars.compile(recipeTemplate)
 }
 
 function handlebarsSetup() {
