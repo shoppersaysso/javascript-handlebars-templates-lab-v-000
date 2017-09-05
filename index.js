@@ -6,7 +6,7 @@ function createRecipe() {
   var ingredients = document.getElementById("ingredients")
 
   var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-  var recipe = createRecipeTemplate({description: 'description', indgredients: 'ingredients'})
+  var recipe = createRecipeTemplate({name: 'name', description: 'description', indgredients: 'ingredients'})
 
   var submitAction = createRecipe
 
