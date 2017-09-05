@@ -49,7 +49,6 @@ function getRecipeVals() {
 }
 
 function handlebarsSetup() {
-  //put any handlebars registrations here.
   Handlebars.registerHelper('displayIngredient', function(ingredient) {
     return new Handlebars.SafeString('<li name="ingredientsList">' + ingredient + '</li>')
   })
@@ -59,7 +58,6 @@ function handlebarsSetup() {
 
 
 function init() {
-  //put any page initialization/handlebars initialization here
   handlebarsSetup()
   initForm()
 }
