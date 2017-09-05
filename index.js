@@ -43,8 +43,8 @@ function createRecipe() {
 
 
 function displayEditForm() {
-  var name = document.getElementById("nameHeader").value
-  var description = document.getElementById("description").value
+  var name = document.getElementById("nameHeader").innerText
+  var description = document.getElementById("description").innerText
   var ingredientsList = document.getElementsByName("ingredientsList")
   var ingredients = []
   for(var i = 0; i < ingredientsList.length; i++) {
