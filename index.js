@@ -6,7 +6,7 @@ function initForm() {
 }
 
 function recipeInfo() {
-  var ingredientList = document.getElementByName("ingredients")
+  var ingredientsList = document.getElementByName("ingredients")
   var ingredients = []
   for(var i = 0; i < ingredientsList.length; i++) {
     if(ingredientsList[i].value !== "")
@@ -25,8 +25,9 @@ function createRecipe() {
 
 function displayEditForm() {
   var name = document.getElementById("nameHeader").innerText
-  var description = document.getElementById("description")
-  
+  var description = document.getElementById("description").innerText
+  var ingredientsList
+
 
 }
 
