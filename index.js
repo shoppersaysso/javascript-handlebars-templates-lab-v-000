@@ -15,6 +15,7 @@ function init() {
   document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
+}
 
 
 function recipeInfo() {
@@ -64,6 +65,4 @@ function updateRecipe() {
   var template = Handlebars.compile(recipeTemplate)
 
   document.getElementById("main").innerHTML += template(recipe)
-}
-
 }
