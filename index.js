@@ -11,13 +11,13 @@ function recipeInfo() {
   for(var i = 0; i < ingredientsList.length; i++) {
     if(ingredientsList[i].value !== "")
     ingredients.push(ingredientsList[i].value)
+    }
   }
-}
-var name = document.getElementById("name").value
-var description = document.getElementById("description").value
-var recipe = {name, ingredients, description}
-return(recipe)
-}
+  var name = document.getElementById("name").value
+  var description = document.getElementById("description").value
+  var recipe = {name, ingredients, description}
+  return(recipe)
+  }
 
 function createRecipe() {
   var recipe = recipeInfo()
