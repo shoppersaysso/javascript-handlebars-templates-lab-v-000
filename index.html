@@ -14,18 +14,9 @@
         {{> recipeFormPartial}}
       </form>
     </script>
-    <!-- recipe template -->
-    <div id="recipe">
-    <script id="recipe-template" type="text/x-handlebars-template">
-      <div id="recipe">
-      <p>{{description}}</p>
-        <ul>
-        {{#each ingredients}}
-        <li>{{quantity}}</li>
-        {{/each}}
-        <li>{{name}}</li>
-        {{/each}}
-        </ul>
+    <!-- recipe form partial -->
+    <script id="recipe-form-partial" type="text/x-handlebars-template">
+      Name: <input id="name" type="text" value="{{name}}"><br>
       <a href="#" onclick="displayEditForm();">Edit Recipe</a>
     </div>
         <!-- recipe details partial template -->
