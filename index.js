@@ -47,8 +47,8 @@ function displayEditForm() {
 }
 
 function updateRecipe() {
-
-  document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'editRecipe()'})
+  var recipe = recipeInfo()
+  var recipeTemplate = document.getElementById("recipe- ")
 }
 
 function handlebarsSetup() {
