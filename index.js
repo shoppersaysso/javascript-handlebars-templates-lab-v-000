@@ -1,4 +1,4 @@
-function init() {
+// function init() {
 //   var recipe = {
 //     description: 'yummy chicken noodle soup',
 //     ingredients: [
