@@ -9,14 +9,13 @@
   <body>
     <main id="main">
     </main>
-
-    <form id="recipe-form-template" onsubmit="createRecipe();return false;">
-      <div id="recipe-form">
-      Description: <input type="text" id="description"><br>
-      Ingredients: <input type="text" id="ingredients"><br>
-      <input type="submit">
+    <div id="recipe-form">
+      <form id="recipe-form-template" onsubmit="createRecipe();return false;">
+        Description: <input type="text" id="description"><br>
+        Ingredients: <input type="text" id="ingredients"><br>
+        <input type="submit">
+      </form>
     </div>
-    </form>
 
     <div id="recipe">
     <script id="recipe-template" type="text/x-handlebars-template">
