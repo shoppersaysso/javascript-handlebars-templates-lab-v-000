@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe() {
-  var description =
-  var ingredients =
+  var description = document.getElementById("description")
+  var ingredients = document.getElementById("ingredients")
 
   var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   var recipe = createRecipeTemplate({description: 'description', indgredients: 'ingredients'})
