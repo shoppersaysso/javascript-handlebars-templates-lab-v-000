@@ -20,7 +20,7 @@ function createRecipe() {
   var template = Handlebars.compile(recipeTemplate)
 
 
-  document.getElementById("recipe-template").innerHTML += newRecipe;
+  document.getElementById("main").innerHTML += newRecipe;
 }
 
 
