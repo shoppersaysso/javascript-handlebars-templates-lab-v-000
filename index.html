@@ -19,36 +19,7 @@
       </article>
     </script>
     <!-- recipe details partial -->
-    <script id="recipe-details-partial" type="text/x-handlebars-template">
-      <p id="recipeDescription">{{description}}</p>
-      <ul>
-        {{#each ingredients}}
-        {{ displayIngredient this}}
-        {{/each}}
-      </ul>
-    </script>
-    <!-- recipe form -->
-    <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form id="recipe-form" onsubmit="{{submitAction}};return false;">
-        {{> recipeFormPartial}}
-      </form>
-    </script>
-    <!-- recipe form partial -->
-    <script id="recipe-form-partial" type="text/x-handlebars-template">
-      Name: <input id="name" type="text" value="{{name}}"><br>
-      Description: <input id="description" type="text" value="{{description}}"><br>
-      Ingredients <br>
-      {{#each ingredients}}
-      <input name="ingredients" type="text" value="{{this}}"><br>
-      {{else}}
-      <input name="ingredients" type="text"><br>
-      <input name="ingredients" type="text"><br>
-      <input name="ingredients" type="text"><br>
-      <input name="ingredients" type="text"><br>
-      <input name="ingredients" type="text"><br>
-      {{/each}}
-      <input type="submit">
-    </script>
+  
     </main>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
