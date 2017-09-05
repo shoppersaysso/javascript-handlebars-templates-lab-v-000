@@ -25,7 +25,7 @@ function recipeInfo() {
     if(ingredientsList[i].value !== "")
     ingredients.push(ingredientsList[i].value)
     }
-  }
+
   var name = document.getElementById("name").value
   var description = document.getElementById("description").value
   var recipe = {name, ingredients, description}
