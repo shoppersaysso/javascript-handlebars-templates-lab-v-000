@@ -18,6 +18,16 @@
 
     <div id="derekData"></div>
 
+    <script type="text/javascript">
+
+    var myInfo ="<p>My name is {{name}} and I live at {{street}} in {{city}}, {{state}}</p>"
+
+    var template = Handlebars.compile(myInfo);
+
+    var data = template({name: "Derek", street: "123 Main St", city: "Pittsburgh", state: "PA"})
+
+    </script>
+
     <div id="recipe">
     <script id="recipe-template" type="text/x-handlebars-template">
       <div id="recipe">
