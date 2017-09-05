@@ -5,7 +5,7 @@
 // }
 
 function recipeInfo() {
-  var ingredientsList = document.getElementByNames("ingredients")
+  var ingredientsList = document.getElementByid("ingredients")
   var ingredients = []
   for(var i = 0; i < ingredientsList.length; i++) {
     if(ingredientsList[i].value !== "")
