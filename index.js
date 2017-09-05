@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe() {
+  var description =
+  var ingredients =
+
+  var createRecipeTemplate = Handlebars.compile(document.getElementById("recipe-form-template"))
 
 }
 
@@ -24,5 +28,5 @@ function displayEditForm() {
 }
 
 function updateRecipe() {
-  
+
 }
