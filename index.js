@@ -30,7 +30,7 @@ function createRecipe() {
 function displayEditForm() {
   var name = document.getElementById("nameHeader").innerText
   var description = document.getElementById("recipeDescription").innerText
-  var ingredientsList = document.getElementsByName("ingredientsList")
+  var ingredientsList = document.getElementsByName("ingredients")
   var ingredients = []
   for(var i = 0; i < ingredientsList.length; i++) {
     ingredients.push(ingredientsList[i].innerText)
