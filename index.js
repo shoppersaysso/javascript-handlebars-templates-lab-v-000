@@ -47,12 +47,12 @@ function displayEditForm() {
   var description = document.getElementById("description").innerText
   var ingredientsList = document.getElementsByName("ingredientsList")
   var ingredients = []
-  // for(var i = 0; i < ingredientsList.length; i++) {
+  for(var i = 0; i < ingredientsList.length; i++) {
     ingredients.push(ingredientsList[i].innerText)
   }
 
-  var recipeForm = document.getElementById("recipe-form-template").innerHTML
-  var template = Handlebars.compile(recipeForm)
+  var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
+  var template = Handlebars.compile(recipeFormTemplate)
 
   var recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
 
