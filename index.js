@@ -8,7 +8,7 @@ function init() {
     ]
   }
 
-  var template = Handlebars.compile(document.getElementById("my-template").innerHTML);
+  var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
   var html = template(recipe);
 }
 document.addEventListener("DOMContentLoaded", function(event) {
